@@ -1,0 +1,11 @@
+.title KiCad schematic
+.include "/home/lucas/kicad_lib/XSPICE-models-symbols-12/Simulation_XSPICE.sp"
+.save all
+.param vcc=5.0
+.tran 1u 60m
+V1 /signal 0 DC 0.5 SIN( 0.5 0.5 50 0 0 270 ) AC 1  
+XU1 /signal 0 /PB1 H_PWM dc1=0.01 dc2=0.99 freq=2k
+C1 /filter_output 0 150n
+R1 /PB1 /filter_output 4.7k
+.end
+

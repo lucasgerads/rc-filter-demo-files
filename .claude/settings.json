@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__lecroy-scope",
+      "mcp__pymcuprog",
+      "mcp__spicelib"
+    ]
+  }
+}
